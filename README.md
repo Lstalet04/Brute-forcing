@@ -1,6 +1,7 @@
 # Brute Force Simulator
 
-This project is a simple web application that simulates brute force attacks using a Python backend with Flask and a frontend built with HTML, CSS, and JavaScript. It provides options to test a directory brute-force and a password brute-force.
+This project is a simple web application that simulates brute force attacks using a Python backend with Flask and a frontend built with HTML, CSS, and JavaScript. It provides options to test a directory brute-force and a password brute-force. The password can contain letters (capital or not) and numbers (no symbol) for the password brute force, but can contain symbol as well for the directory brute force. 
+Little heads up: Brute Force attack on password others than pin numbers (all number password) aren't efficient so if your password gets larger than 6 or 7 characters, you're gonna be there for a while. This project was more of a personnal challenge than a computing feat as there are a lot of very effective craking program that use more complex algorithm that brute force.
 
 ## Table of Contents
 
@@ -70,19 +71,6 @@ This project is a simple web application that simulates brute force attacks usin
 3. Click on "Directory Brute Force" to simulate a directory brute force attack.
 4. The results will be displayed below the buttons.
 
-## File Structure
-
-brute-force-simulator/
-│
-├── app.py          # Flask backend
-├── index.html      # Frontend HTML
-├── styles.css      # Frontend CSS
-├── script.js       # Frontend JavaScript
-├── README.md       # Project README file
-└── requirements.txt# Python dependencies
-
-
-
 ## Technologies Used
 
 - **Frontend**:
@@ -94,7 +82,5 @@ brute-force-simulator/
   - Python
   - Flask
   - Flask-CORS
+  - itertools
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
