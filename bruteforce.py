@@ -42,6 +42,15 @@ def dir_bruteforce(password):
                 tim = f"time elapsed: {(int)(end - start)} seconds"
                 print(tim)
                 return
+    with open('list.txt', 'r') as file:
+        for line in file:
+            word = line.strip()
+            if word == password:
+                print(f"password found in database: {word}")
+                end = time.time()
+                tim = f"time elapsed: {(int)(end - start)} seconds"
+                print(tim)
+                return
 
     
     print("Didn't find anything! Password is safe")
@@ -50,4 +59,3 @@ def dir_bruteforce(password):
     print(tim)
     return
 
-bruteforce("999849")
