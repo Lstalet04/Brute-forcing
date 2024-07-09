@@ -9,7 +9,6 @@ Little heads up: Brute Force attack on password others than pin numbers (all num
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Technologies Used](#technologies-used)
-- [License](#license)
 
 ## Installation
 
